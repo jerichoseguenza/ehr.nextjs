@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[918],{335:(_,e,u)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/publicPage",function(){return u(6793)}])},6793:(_,e,u)=>{"use strict";u.r(e),u.d(e,{default:()=>s});var n=u(7876);u(4232);let s=()=>(0,n.jsx)("div",{children:"HALLo"})}},_=>{_.O(0,[636,593,792],()=>_(_.s=335)),_N_E=_.O()}]);
