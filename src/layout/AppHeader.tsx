@@ -91,13 +91,7 @@ const AppHeader: React.FC = () => {
               src="./images/logo/logo.svg"
               alt="Logo"
             />
-            <Image
-              width={154}
-              height={32}
-              className="hidden dark:block"
-              src="./images/logo/logo-dark.svg"
-              alt="Logo"
-            />
+            Modern
           </Link>
 
           <button

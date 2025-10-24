@@ -29,9 +29,38 @@ type NavItem = {
 const navItems: NavItem[] = [
   {
     icon: <GridIcon />,
-    name: "Dashboard",
+    name: "Dashboard 1",
     subItems: [{ name: "Ecommerce", path: "/", pro: false }],
   },
+
+  {
+    icon: <GridIcon />,
+    name: "Front Office",
+    subItems: [{ name: "Registration", path: "/", pro: false }],
+  },
+  {
+    icon: <GridIcon />,
+    name: "Admission",
+    subItems: [{ name: "Main", path: "/", pro: false }],
+  },
+  {
+    icon: <GridIcon />,
+    name: "Physcian",
+    subItems: [{ name: "CPOE", path: "/", pro: false }],
+  },
+  {
+    icon: <GridIcon />,
+    name: "Laboratory",
+    subItems: [{ name: "Main", path: "/", pro: false }],
+  },
+  {
+    icon: <GridIcon />,
+    name: "Pharmacy",
+    subItems: [{ name: "Main", path: "/", pro: false }],
+  },
+
+
+
   {
     icon: <CalenderIcon />,
     name: "Calendar",
@@ -311,20 +340,7 @@ const AppSidebar: React.FC = () => {
         <Link href="/">
           {isExpanded || isHovered || isMobileOpen ? (
             <>
-              <Image
-                className="dark:hidden"
-                src="/images/logo/logo.svg"
-                alt="Logo"
-                width={150}
-                height={40}
-              />
-              <Image
-                className="hidden dark:block"
-                src="/images/logo/logo-dark.svg"
-                alt="Logo"
-                width={150}
-                height={40}
-              />
+              Modern EHR
             </>
           ) : (
             <Image
