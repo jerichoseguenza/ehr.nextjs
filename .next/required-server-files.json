@@ -2,7 +2,6 @@
   "version": 1,
   "config": {
     "env": {},
-    "webpack": null,
     "eslint": {
       "ignoreDuringBuilds": false
     },
@@ -14,7 +13,7 @@
     "cleanDistDir": true,
     "assetPrefix": "",
     "cacheMaxMemorySize": 52428800,
-    "configOrigin": "next.config.js",
+    "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
     "generateEtags": true,
     "pageExtensions": [
@@ -80,13 +79,12 @@
     "serverRuntimeConfig": {},
     "publicRuntimeConfig": {},
     "reactProductionProfiling": false,
-    "reactStrictMode": true,
+    "reactStrictMode": null,
     "reactMaxHeadersLength": 6000,
     "httpAgentOptions": {
       "keepAlive": true
     },
     "logging": {},
-    "compiler": {},
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
     "modularizeImports": {
@@ -98,8 +96,9 @@
       }
     },
     "outputFileTracingRoot": "/Users/levi/Documents/GitHub/ehr.nextjs",
+    "allowedDevOrigins": [],
     "experimental": {
-      "useSkewCookie": false,
+      "allowedDevOrigins": [],
       "nodeMiddleware": false,
       "cacheLife": {
         "default": {
@@ -148,7 +147,6 @@
       "linkNoTouchStart": false,
       "caseSensitiveRoutes": false,
       "clientSegmentCache": false,
-      "dynamicOnHover": false,
       "preloadEntriesOnStart": true,
       "clientRouterFilter": true,
       "clientRouterFilterRedirects": false,
@@ -176,6 +174,9 @@
       "swcTraceProfiling": false,
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
+      "turbo": {
+        "root": "/Users/levi/Documents/GitHub/ehr.nextjs"
+      },
       "typedRoutes": false,
       "typedEnv": false,
       "parallelServerCompiles": false,
@@ -184,10 +185,8 @@
       "authInterrupts": false,
       "webpackMemoryOptimizations": false,
       "optimizeServerReact": true,
+      "useEarlyImport": false,
       "viewTransition": false,
-      "routerBFCache": false,
-      "removeUncaughtErrorAndRejectionListeners": false,
-      "validateRSCRequestHeaders": false,
       "staleTimes": {
         "dynamic": 0,
         "static": 300
@@ -198,11 +197,6 @@
       "dynamicIO": false,
       "inlineCss": false,
       "useCache": false,
-      "globalNotFound": false,
-      "devtoolNewPanelUI": false,
-      "devtoolSegmentExplorer": false,
-      "browserDebugInfoInTerminal": false,
-      "optimizeRouterScrolling": false,
       "optimizePackageImports": [
         "lucide-react",
         "date-fns",
@@ -234,10 +228,10 @@
         "@effect/sql-mssql",
         "@effect/sql-mysql2",
         "@effect/sql-pg",
-        "@effect/sql-sqlite-node",
-        "@effect/sql-sqlite-bun",
-        "@effect/sql-sqlite-wasm",
-        "@effect/sql-sqlite-react-native",
+        "@effect/sql-squlite-node",
+        "@effect/sql-squlite-bun",
+        "@effect/sql-squlite-wasm",
+        "@effect/sql-squlite-react-native",
         "@effect/rpc",
         "@effect/rpc-http",
         "@effect/typeclass",
@@ -283,34 +277,9 @@
       "trustHostHeader": false,
       "isExperimentalCompile": false
     },
-    "htmlLimitedBots": "Mediapartners-Google|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti",
+    "htmlLimitedBots": "Mediapartners-Google|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview",
     "bundlePagesRouterDependencies": false,
-    "configFileName": "next.config.js",
-    "turbopack": {
-      "root": "/Users/levi/Documents/GitHub/ehr.nextjs"
-    },
-    "_originalRewrites": {
-      "beforeFiles": [],
-      "afterFiles": [
-        {
-          "source": "/",
-          "destination": "/"
-        },
-        {
-          "source": "/dashboard",
-          "destination": "/"
-        },
-        {
-          "source": "/about",
-          "destination": "/"
-        },
-        {
-          "source": "/login",
-          "destination": "/"
-        }
-      ],
-      "fallback": []
-    }
+    "configFileName": "next.config.ts"
   },
   "appDir": "/Users/levi/Documents/GitHub/ehr.nextjs",
   "relativeAppDir": "",
@@ -324,12 +293,14 @@
     ".next/server/middleware-build-manifest.js",
     ".next/server/middleware-react-loadable-manifest.js",
     ".next/react-loadable-manifest.json",
-    ".next/dynamic-css-manifest.json",
-    ".next/server/dynamic-css-manifest.js",
+    ".next/server/app-paths-manifest.json",
+    ".next/app-path-routes-manifest.json",
+    ".next/app-build-manifest.json",
+    ".next/server/server-reference-manifest.js",
+    ".next/server/server-reference-manifest.json",
     ".next/BUILD_ID",
     ".next/server/next-font-manifest.js",
-    ".next/server/next-font-manifest.json",
-    ".next/required-server-files.json"
+    ".next/server/next-font-manifest.json"
   ],
   "ignore": [
     "node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*"

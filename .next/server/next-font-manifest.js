@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{"/_app":[]},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":true}';
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/levi/Documents/GitHub/ehr.nextjs/src/app/layout":["static/media/7b0b24f36b1a6d0b-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
